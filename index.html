@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Afaq Javed — GTM Engineer &amp; B2B Outbound Operator</title>
+<meta name="description" content="I build B2B outbound pipelines end to end — ICP, sourcing, enrichment, verification, cold email, CRM. 50,000+ contacts sourced. 1,000 prospects cut to 70: 70% replied, 25% of those bought. Python, Apollo, HubSpot, Clay.">
+<meta name="author" content="Afaq Javed">
+<link rel="canonical" href="https://faaqjaved.github.io/Portfolio/">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://faaqjaved.github.io/Portfolio/">
+<meta property="og:title" content="Afaq Javed — GTM Engineer &amp; B2B Outbound Operator">
+<meta property="og:description" content="50,000+ B2B contacts sourced. 15,000 cold emails: &lt;1% → 7%. 1,000 prospects cut to 70 → 70% replied, 25% of them bought. I build the pipeline underneath the tools.">
+<meta property="og:image" content="https://faaqjaved.github.io/Portfolio/assets/img/og.png">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preload" href="assets/fonts/anton-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/main.css">
+<meta name="theme-color" content="#FBF8F3">
+<script>
+/* set theme before first paint — no flash on reload */
+(function(){try{
+  /* Light is the default for everyone. Dark only if the visitor chose it. */
+  var t = localStorage.getItem('theme') === 'dark' ? 'dark' : 'light';
+  document.documentElement.setAttribute('data-theme',t);
+  var m=document.querySelector('meta[name=theme-color]');
+  if(m) m.setAttribute('content', t==='dark' ? '#16181E' : '#FBF8F3');
+}catch(e){}})();
+</script>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Afaq Javed",
+"jobTitle":"GTM Engineer / B2B Outbound Operations Specialist",
+"email":"mailto:faaqjaved@gmail.com","telephone":"+923120783268",
+"url":"https://faaqjaved.github.io/Portfolio/",
+"address":{"@type":"PostalAddress","addressLocality":"Gujrat","addressRegion":"Punjab","addressCountry":"PK"},
+"sameAs":["https://www.linkedin.com/in/faaqjaved/","https://github.com/FAAQJAVED"],
+"knowsAbout":["B2B Lead Generation","Outbound Sales","Data Enrichment","GTM Engineering","Revenue Operations","Python","Apollo","HubSpot","Clay"]}
+</script>
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<nav class="nav">
+  <div class="nav-in">
+    <a href="#top" class="brand">AFAQ<i>.</i>JAVED</a>
+    <button class="burger" id="burger" aria-label="Menu" aria-expanded="false">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+    <div class="nav-links" id="navlinks">
+      <a href="#services">Services</a>
+      <a href="#work">Work</a>
+      <a href="#clients">Clients</a>
+      <a href="#process">Process</a>
+      <a href="#tools">Tools</a>
+      <a href="#stack">Stack</a>
+      <a href="#contact" class="nav-cta">Get in touch</a>
+    </div>
+    <button class="tt" id="tt" aria-label="Switch to dark theme" title="Switch theme">
+      <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round">
+        <circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg>
+    </button>
+
+  </div>
+</nav>
+
+<!-- ============ HERO ============ -->
+<header class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">
+        <span class="dot live"></span>
+        <span class="lab">GTM Engineering · B2B Outbound Operations</span>
+      </div>
+
+      <div class="opento"><b></b> Open to GTM / RevOps roles &amp; freelance projects</div>
+
+      <h1 class="disp">I build the pipeline<br><span class="em">under the tools.</span></h1>
+
+      <p class="hero-sub">
+        Most outbound breaks upstream of the send. I own the whole loop —
+        <strong>ICP → sourcing → enrichment → verification → cold email → CRM</strong> —
+        and build the automation when off-the-shelf tools run out.
+      </p>
+
+      <p class="hero-meta">
+        <b>50,000+</b> contacts sourced &amp; processed &nbsp;·&nbsp; <b>15,000</b> cold emails managed<br>
+        <b>6</b> production Python tools &nbsp;·&nbsp; <b>565</b> tests &nbsp;·&nbsp; CI on Linux / Windows / macOS<br>
+        Gujrat, Pakistan &nbsp;·&nbsp; Remote &nbsp;·&nbsp; UK &amp; US hours
+      </p>
+
+      <div class="btns">
+        <a href="#work" class="btn btn-1">
+          See the work
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a href="#services" class="btn btn-2">What I do</a>
+      </div>
+    </div>
+
+    <!-- the loop I own — operator object, not a terminal -->
+    <aside class="pipe">
+      <div class="pipe-t">The loop I own, end to end</div>
+
+      <div class="pipe-s">
+        <div class="pipe-n">01</div>
+        <div><div class="pipe-x">ICP definition</div><div class="pipe-d">Who actually buys, and the trigger that says now</div></div>
+      </div>
+      <div class="pipe-s">
+        <div class="pipe-n">02</div>
+        <div><div class="pipe-x">Sourcing</div><div class="pipe-d">Directories, Maps, Sales Navigator, Apollo</div></div>
+      </div>
+      <div class="pipe-s">
+        <div class="pipe-n">03</div>
+        <div><div class="pipe-x">Enrichment</div><div class="pipe-d">Named contact, verified email, phone</div></div>
+      </div>
+      <div class="pipe-s">
+        <div class="pipe-n">04</div>
+        <div><div class="pipe-x">Verification</div><div class="pipe-d">Valid / catch-all / invalid, sent differently</div></div>
+      </div>
+      <div class="pipe-s">
+        <div class="pipe-n">05</div>
+        <div><div class="pipe-x">Cold email</div><div class="pipe-d">Warmed domains, segmented copy, measured</div></div>
+      </div>
+      <div class="pipe-s">
+        <div class="pipe-n">06</div>
+        <div><div class="pipe-x">CRM handoff</div><div class="pipe-d">One row per contact, sales can work it</div></div>
+      </div>
+
+      <div class="pipe-fb">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/></svg>
+        <span>Reply data feeds back to step 01 — most teams never close this</span>
+      </div>
+    </aside>
+  </div>
+</header>
+
+<!-- ============ SERVICES ============ -->
+<section id="services">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="sec-num">01 — WHAT I DO</span>
+      <h2 class="disp">Five things,<br><span class="em">done properly.</span></h2>
+      <p class="lede">Hire me for one of these, or for the whole loop. Every one has a case study and a client behind it further down the page.</p>
+    </div>
+
+    <div class="svcs rv">
+      <div class="svc">
+        <div class="svc-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg></div>
+        <h3>Lead sourcing &amp; qualification</h3>
+        <p>Named decision-makers matching a real ICP, not a directory dump. Hard filters, then a human pass on every row that survives.</p>
+        <div class="svc-m">50,000+ contacts built</div>
+      </div>
+
+      <div class="svc">
+        <div class="svc-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M7 12h10M10 18h4"/></svg></div>
+        <h3>Data cleaning &amp; enrichment</h3>
+        <p>Messy list in, working list out. Deduplicated, geo-filtered, ICP-scored, every contact verified and flagged so you know what is safe to send.</p>
+        <div class="svc-m">22,700 → 9,567 on one job</div>
+      </div>
+
+      <div class="svc">
+        <div class="svc-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="5" width="19" height="14" rx="2.5"/><path d="M3 7l9 6 9-6"/></svg></div>
+        <h3>Cold email infrastructure</h3>
+        <p>Dedicated sending domains, SPF/DKIM/DMARC, warmup, segmented sequences. The plumbing that decides whether anything lands at all.</p>
+        <div class="svc-m">15,000 emails managed</div>
+      </div>
+
+      <div class="svc">
+        <div class="svc-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1"/><circle cx="12" cy="12" r="3.4"/></svg></div>
+        <h3>Custom GTM automation</h3>
+        <p>When Clay, Apollo or a no-code tool runs out, I build the missing piece in Python — scrapers, enrichers, delivery pipelines.</p>
+        <div class="svc-m">6 public tools · 565 tests</div>
+      </div>
+
+      <div class="svc">
+        <div class="svc-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V9M10 19V4M16 19v-7M22 19H2"/></svg></div>
+        <h3>Market &amp; ICP research</h3>
+        <p>Which industries, company types and titles are actually worth your outreach — with the reasoning written down, before a single email goes out.</p>
+        <div class="svc-m">Sector mapping &amp; targeting</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TICKER ============ -->
+<div class="ticker" aria-hidden="true">
+  <div class="tick-track" id="tick">
+    <span class="tick"><b>576</b> leads in 49 minutes, one command</span>
+    <span class="tick"><b>50,000+</b> contacts sourced &amp; processed</span>
+    <span class="tick"><b>&lt;1% → 7%</b> reply rate after diagnosis</span>
+    <span class="tick"><b>1,000 → 70</b> prospects → <b>25%</b> of repliers bought</span>
+    <span class="tick"><b>565</b> automated tests, 6 tools</span>
+    <span class="tick"><b>22,700 → 9,567</b> messy list, cleaned and ICP-qualified</span>
+    <span class="tick"><b>3</b> operating systems in CI</span>
+  </div>
+</div>
+
+<!-- ============ STATS ============ -->
+<section id="numbers">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="sec-num">02 — THE NUMBERS</span>
+      <h2 class="disp">Every figure here<br><span class="em">has a run behind it.</span></h2>
+      <p class="lede">No rounded-up totals, no borrowed team metrics. Where a number needs a breakdown, the breakdown is printed underneath it — including the parts that did not work.</p>
+    </div>
+
+    <div class="stats rv">
+      <div class="stat">
+        <div class="stat-n">50,000+</div>
+        <div class="stat-l">B2B contacts sourced and processed</div>
+        <div class="stat-s">Career total · records built</div>
+        <div class="brk">
+          <div class="brk-r"><span>UK property compliance</span><b>10,000+</b></div>
+          <div class="brk-r"><span>SaaS client</span><b>10,000</b></div>
+          <div class="brk-r"><span>Freelance, mixed ICPs</span><b>30,000</b></div>
+        </div>
+      </div>
+      <div class="stat">
+        <div class="stat-n">576</div>
+        <div class="stat-l">Leads from two sources, deduplicated and delivered</div>
+        <div class="stat-s">49 minutes · unattended</div>
+      </div>
+      <div class="stat">
+        <div class="stat-n">7%</div>
+        <div class="stat-l">Reply rate after diagnosis — up from under 1%</div>
+        <div class="stat-s">15,000 emails · 5 months</div>
+      </div>
+      <div class="stat">
+        <div class="stat-n">25%</div>
+        <div class="stat-l">Of everyone who replied went on to buy</div>
+        <div class="stat-s">SaaS client · 70 sent · 70% replied</div>
+      </div>
+    </div>
+
+    <!-- honesty note: what 'sourced' means vs 'verified' -->
+    <div class="rv" style="margin-top:34px;display:grid;grid-template-columns:1.05fr 1fr;gap:30px;align-items:start">
+      <div>
+        <h3 class="disp" style="margin-bottom:14px">What those 50,000 actually are</h3>
+        <p style="color:var(--mid);font-size:15px">Records I sourced, cleaned and processed across every engagement. Not all of them were mailbox-verified, and saying otherwise would fall apart in the first interview.</p>
+        <p style="color:var(--mid);font-size:15px;margin-top:13px">The 10,000 from the property job were accurate company records, but most carried a generic inbox — <code class="c">info@</code>, <code class="c">enquiries@</code>. Fine for a switchboard, wrong for cold outreach. Real businesses do use them; they just do not get read by the person who can say yes. That job is the reason every list I have built since is scored by contact type before anything is sent.</p>
+      </div>
+      <div>
+        <div class="lab" style="margin-bottom:4px">How a finished list breaks down</div>
+        <div class="stk" role="img" aria-label="Verification split: 62 percent named and verified, 24 percent catch-all, 14 percent invalid and dropped">
+          <i style="width:62%;background:var(--green)">62% VERIFIED</i>
+          <i style="width:24%;background:var(--ember-fill)">24% CATCH-ALL</i>
+          <i style="width:14%;background:var(--red)">14%</i>
+        </div>
+        <div class="stk-k">
+          <span><b style="background:var(--green)"></b> Named + verified · full volume</span>
+          <span><b style="background:var(--ember-fill)"></b> Catch-all · separate domain, low volume</span>
+          <span><b style="background:var(--red)"></b> Invalid · dropped</span>
+        </div>
+        <p class="chart-cap">Typical split on a finished list. Only the green band gets full sending volume.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CASE STUDIES ============ -->
+<section id="work" style="background:var(--bg-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="sec-num">03 — CASE STUDIES</span>
+      <h2 class="disp">Four problems.<br><span class="em">What actually broke.</span></h2>
+      <p class="lede">Each one is written the way I'd walk you through it on a call: what the brief was, what went wrong, what I changed, and what it cost me to learn.</p>
+    </div>
+
+    <div class="cases">
+
+      <!-- CASE 1 -->
+      <article class="case rv">
+        <div class="case-head">
+          <div>
+            <span class="case-tag">UK Property Compliance · Oct 2025 – Mar 2026</span>
+            <h3 class="case-h">The 10,000-contact<br>database I built by hand</h3>
+            <p class="case-sub">Sole operator of the entire outbound system for a UK property compliance provider — sourcing, enrichment, verification, segmentation, copy, sending, tracking and sales handoff. No team. No licensed CRM. Built from zero.</p>
+          </div>
+          <div class="case-kpi"><div class="n">10,000+</div><div class="l">Contacts built solo</div></div>
+        </div>
+        <button class="case-toggle" aria-expanded="false">
+          <span>Read the teardown</span>
+          <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="case-body">
+          <div class="psr">
+            <div class="psr-b">
+              <div class="psr-k">The ask</div>
+              <div class="psr-v"><p>One person to run the entire outbound function. Build the contact database, run the campaigns, keep the CRM straight, maintain sales sheets and invoice logs. No team, no existing list, no tooling budget.</p></div>
+            </div>
+            <div class="psr-b">
+              <div class="psr-k">Why it took six months</div>
+              <div class="psr-v">
+                <p>Because I was the scraper. <strong>150 websites a day.</strong> Open site, find contact page, copy email, copy phone, paste into the spreadsheet, repeat. Eight hours a day. Eyes sore by noon.</p>
+                <p>London property is fragmented and hyperlocal — letting agents, block managers, estate agents, care homes, restaurants — spread across every borough with no single directory covering them, and badly under-indexed by Apollo and Sales Navigator precisely <em>because</em> it's niche. Each borough was its own manual sweep.</p>
+                <p>The one thing working in my favour: compliance has a natural <strong>trigger event</strong> built in. Certificates expire on a schedule. A prospect with an expiry coming up is a fundamentally different lead from one without — and targeting on that beat any static "owns property in London" list I could have built.</p>
+              </div>
+            </div>
+            <div class="psr-b">
+              <div class="psr-k">What broke</div>
+              <div class="psr-v">
+                <p><strong>Almost every email I collected started with <code class="c">info@</code>.</strong></p>
+                <p>That's what a website's contact page gives you. Generic inboxes, watched by a receptionist or an auto-responder, nobody with buying authority behind them. I'd built a 10,000-row database that was technically accurate and commercially close to useless for cold outreach. The outreach failed, and for a long time I assumed it was the copy.</p>
+              </div>
+            </div>
+            <div class="psr-b">
+              <div class="psr-k">The fix</div>
+              <div class="psr-v">
+                <p>Two changes. First, stop treating "an email exists" as the finish line — the record isn't done until there's a <strong>named person with a title</strong> attached. Second, source contacts where names actually live: Apollo, company team pages, LinkedIn — not the contact form.</p>
+                <p>That's also where the <strong>three-bucket verification standard</strong> came from. Role-based addresses stopped being "a contact with a slightly worse email" and became their own category — dropped from sends entirely, flagged for a different channel if the account was worth chasing another way. Everything in section 04 is the formalised version of what I learned here the hard way.</p>
+                <p>I asked to automate the sourcing so I could spend that time on qualification instead of copy-paste. The answer was no.</p>
+              </div>
+            </div>
+            <div class="psr-b">
+              <div class="psr-k">The outcome</div>
+              <div class="psr-v">
+                <p>They ended up with a 10,000+ contact database segmented by borough, business type and portfolio size, plus a full audit trail across sales sheets, invoice logs and service records — one row per prospect, not per email, so the sales team had a single source of truth rather than a touch log.</p>
+                <div class="callout">
+                  <div class="lab lab-em">What I actually took from it</div>
+                  <p>Living the manual version is why the tools I built later are shaped the way they are. I didn't automate a process I'd read about. I automated the one that had been wrecking my eyes for six months — which is why the first thing my enricher does is go past the contact page.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- CASE 2 -->
+      <article class="case rv">
+        <div class="case-head">
+          <div>
+            <span class="case-tag">Cold email · 15,000 sends · 5 months</span>
+            <h3 class="case-h">Under 1% replies.<br>The list was the problem.</h3>
+            <p class="case-sub">Sequences running, tools configured correctly, 300–400 sends a day for five months. Almost nothing came back. The diagnosis landed around email number 1,000.</p>
+          </div>
+          <div class="case-kpi"><div class="n">&lt;1% ▸ 7%</div><div class="l">Reply rate</div></div>
+        </div>
+        <button class="case-toggle" aria-expanded="false">
+          <span>Read the teardown</span>
+          <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="case-body">
+          <div class="psr">
+            <div class="psr-b">
+              <div class="psr-k">The symptom</div>
+              <div class="psr-v"><p>Volume was fine. Deliverability looked fine on the surface. The sequences were built properly and going out on schedule. The replies just weren't there — and the few that came were almost all out-of-office.</p></div>
+            </div>
+            <div class="psr-b">
+              <div class="psr-k">Why I checked at email 1,000</div>
+              <div class="psr-v">
+                <p>A thousand sends is enough that "bad luck" stops being an explanation. At a normal 2–3% you'd expect twenty-odd replies. I had a handful. So I stopped optimising the copy and went back through the list itself.</p>
+              </div>
+            </div>
+            <div class="psr-b">
+              <div class="psr-k">The diagnosis</div>
+              <div class="psr-v">
+                <p><strong>99% of those emails were landing in generic inboxes</strong> — <code class="c">info@</code>, contact forms, auto-responders. Not real inboxes. Filters, managed by people with no budget authority and every incentive to mark an unsolicited email as spam.</p>
+                <p>I proved it by segmenting the sent list by address type. Every reply I'd received — every single one — came from a named contact at a <code class="c">person@company.com</code> address. Same campaign, same product, same period, same copy. Only the recipient type differed.</p>
+                <p>Underneath that, a second problem: <strong>no SPF, DKIM or DMARC checks in place.</strong> Every send into a generic inbox that got marked as spam was quietly training filters against the sending domain. Volume wasn't neutral — it was actively making things worse.</p>
+              </div>
+            </div>
+            <div class="psr-b">
+              <div class="psr-k">The fix</div>
+              <div class="psr-v">
+                <ul>
+                  <li>Strip every generic address out of the list before a campaign goes live</li>
+                  <li>Re-source named contacts by title and company size through Apollo and company sites</li>
+                  <li>Verify SPF, DKIM and DMARC before sending anything</li>
+                  <li>Segment generic vs named — never send the same sequence to both</li>
+                  <li>Personalise by role, company size and a specific pain point, not by mail-merge token</li>
+                </ul>
+                <p style="margin-top:16px">Reply rate on named, personalised contacts: <strong>around 7%.</strong> Roughly seven times the generic-inbox result.</p>
+
+                <div class="bars" role="img" aria-label="Reply rate comparison: generic inboxes under 1 percent, named and verified contacts around 7 percent, industry benchmark for well-targeted sends 8 to 10 percent">
+                  <div class="bar-r">
+                    <div class="bar-l">Generic<br>inboxes</div>
+                    <div class="bar-t"><i class="bad" style="width:10%"></i></div>
+                    <div class="bar-v">&lt;1%</div>
+                  </div>
+                  <div class="bar-r">
+                    <div class="bar-l">Named +<br>verified</div>
+                    <div class="bar-t"><i class="good" style="width:70%"></i></div>
+                    <div class="bar-v">~7%</div>
+                  </div>
+                  <div class="bar-r">
+                    <div class="bar-l">Industry<br>benchmark</div>
+                    <div class="bar-t"><i style="width:90%;background:var(--line-hi)"></i></div>
+                    <div class="bar-v" style="color:var(--muted)">8–10%</div>
+                  </div>
+                </div>
+                <p class="chart-cap">Same copy. Same tools. Same sender. The only variable that changed was who was on the list.</p>
+              </div>
+            </div>
+            <div class="psr-b">
+              <div class="psr-k">Context on the number</div>
+              <div class="psr-v">
+                <p>For reference, my standing benchmark is <strong>8–10% on properly targeted, personalised sends versus 2–3% on bulk</strong> — roughly a 3–4× spread. The 7% here is the recovery from a broken campaign, not a best case.</p>
+                <div class="callout">
+                  <div class="lab lab-em">The one-line version</div>
+                  <p>Data quality isn't a nice-to-have, it's the whole campaign. Fix the list before you touch the copy. I burned five months and 15,000 sends learning that.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- CASE 3 -->
+      <article class="case rv">
+        <div class="case-head">
+          <div>
+            <span class="case-tag">SaaS client · Narrow ICP</span>
+            <h3 class="case-h">I threw away 930<br>of 1,000 prospects.</h3>
+            <p class="case-sub">A SaaS company selling into a tightly defined segment. I sourced a thousand prospects. Seventy made the final list, 49 of them replied, and a quarter of those became customers.</p>
+          </div>
+          <div class="case-kpi"><div class="n">25%</div><div class="l">Of repliers purchased</div></div>
+        </div>
+        <button class="case-toggle" aria-expanded="false">
+          <span>Read the teardown</span>
+          <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="case-body">
+          <div class="psr">
+            <div class="psr-b">
+              <div class="psr-k">Sourcing</div>
+              <div class="psr-v">
+                <p>Directories and Google Maps for ground-level coverage, because a good part of this segment barely exists on LinkedIn — a Sales Navigator-only approach would have missed it. Then cross-referenced through Sales Navigator and Apollo to attach names and titles.</p>
+                <p><strong>1,000 raw prospects in the pool.</strong> Then the real work started.</p>
+                <div class="fun" role="img" aria-label="Qualification funnel: 1,000 raw prospects, 420 after hard filters, 180 with a named contact, 70 after manual review, 49 replied, and a quarter of those who replied purchased">
+                  <div class="fun-r"><div class="fun-l">Raw pool</div><div class="fun-b mut" style="width:100%">1,000 <small>sourced</small></div></div>
+                  <div class="fun-r"><div class="fun-l">Pass 1 — filters</div><div class="fun-b mut" style="width:42%">420</div></div>
+                  <div class="fun-r"><div class="fun-l">Pass 2 — named</div><div class="fun-b" style="width:18%">180</div></div>
+                  <div class="fun-r"><div class="fun-l">Pass 3 — reviewed</div><div class="fun-b" style="width:12%">70 <small>sent</small></div></div>
+                  <div class="fun-r"><div class="fun-l">Replied</div><div class="fun-b g" style="width:9%">49 <small>70%</small></div></div>
+                  <div class="fun-r"><div class="fun-l">Purchased</div><div class="fun-b g" style="width:6%">25% <small>of repliers</small></div></div>
+                </div>
+                <p class="chart-cap">Every stage removed prospects. The reply rate is high because the list is small, not the other way round.</p>
+              </div>
+            </div>
+            <div class="psr-b">
+              <div class="psr-k">Three passes</div>
+              <div class="psr-v">
+                <ul>
+                  <li><strong>Pass 1 — hard filters.</strong> Remove everyone outside the 5–50 employee range, wrong title, wrong geography.</li>
+                  <li><strong>Pass 2 — named contact or out.</strong> A real person with a real email. Not <code class="c">info@</code>. Not <code class="c">contact@</code>.</li>
+                  <li><strong>Pass 3 — manual review.</strong> Every remaining contact read individually against the full ICP. Decision-maker title confirmed, company size confirmed, location confirmed.</li>
+                </ul>
+                <p style="margin-top:16px"><strong>70 passed.</strong> A 7% survival rate.</p>
+              </div>
+            </div>
+            <div class="psr-b">
+              <div class="psr-k">Why 70 beats 1,000</div>
+              <div class="psr-v">
+                <p>Because a thousand-row list isn't an asset, it's a liability with a spreadsheet around it. Every unqualified send is a chance to get marked as spam, and that damage lands on the sending domain — which then degrades the sends to the contacts who <em>were</em> qualified.</p>
+                <p>Volume doesn't just waste effort. It actively taxes the part of the list that would have worked.</p>
+              </div>
+            </div>
+            <div class="psr-b">
+              <div class="psr-k">The result</div>
+              <div class="psr-v">
+                <p>Those 70 got a personalised, well-structured email — written against a tight enough ICP that the same pain point was genuinely true for all of them, which is only possible <em>because</em> the list was small.</p>
+                <p><strong>49 of the 70 replied — 70%.</strong> Of the people who replied, <strong>a quarter went on to buy.</strong> The client was selling a SaaS product, so the purchase rate is the number that mattered to him, and it is the one worth judging the work on.</p>
+                <div class="callout">
+                  <div class="lab lab-em">What counts as a reply here</div>
+                  <p>A human response from the person I emailed. Out-of-office replies, bounces and automated acknowledgements are excluded. A "no thanks" from a real person counts — turning down a relevant offer is still a reply; an autoresponder is not.</p>
+                </div>
+                <div class="callout">
+                  <div class="lab lab-em">The pattern</div>
+                  <p>Most outbound problems are not copy problems. They are not tool problems. They are list problems. Fix the list first.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- CASE 4 -->
+      <article class="case rv">
+        <div class="case-head">
+          <div>
+            <span class="case-tag">Internal build · Private repository</span>
+            <h3 class="case-h">4–6 hours per delivery,<br>down to one command.</h3>
+            <p class="case-sub">Scrape one source. Find the CSV. Clean it in Excel. Import to Sheets. Send the link. Repeat for the next source, then the next client. No history of what had already been scraped. Every job started from zero.</p>
+          </div>
+          <div class="case-kpi"><div class="n">49 min</div><div class="l">576 leads, unattended</div></div>
+        </div>
+        <button class="case-toggle" aria-expanded="false">
+          <span>Read the teardown</span>
+          <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="case-body">
+          <div class="psr">
+            <div class="psr-b">
+              <div class="psr-k">Before</div>
+              <div class="psr-v"><p><strong>Four to six hours to deliver a single lead list to one client.</strong> Most of it wasn't scraping — it was the cleaning, merging, reformatting and delivering afterwards. And because nothing was stored, I couldn't answer "did we already scrape this?" without opening old folders.</p></div>
+            </div>
+            <div class="psr-b">
+              <div class="psr-k">Now</div>
+              <div class="psr-v">
+                <pre class="cmd">python run_batch.py --tag "digital marketing agencies london" \
+       --scrapers google_maps trustpilot</pre>
+                <p style="margin-top:14px">Both scrapers run simultaneously in the background. <strong>118 leads</strong> from Google Maps (66% with email, 89% with phone), <strong>458</strong> from Trustpilot (96% with email). Normalised, merged and deduplicated automatically. <strong>576 rows delivered to Google Sheets in 49 minutes, completely unattended.</strong></p>
+              </div>
+            </div>
+            <div class="psr-b">
+              <div class="psr-k">Architecture</div>
+              <div class="psr-v">
+                <ul>
+                  <li><strong>Plugin system</strong> — any scraper that returns a list of records connects to the pipeline without touching downstream code. Adding a source is one new file.</li>
+                  <li><strong>SQLite storage</strong> — every run saved with a unique <code class="c">run_id</code>, scraper name and timestamp. Permanent searchable history.</li>
+                  <li><strong>FastAPI layer</strong> — four endpoints to trigger runs, query results and push to any Sheet.</li>
+                  <li><strong>Schema-flexible</strong> — Maps returns <code class="c">Rating</code>, Trustpilot returns <code class="c">Trust Score</code>, Yell returns <code class="c">review_count</code>. None of them have to match. The pipeline stores all of them.</li>
+                  <li><strong>100+ automated tests</strong> covering the API layer, storage, normalisation and delivery. The captured run in the proof section shows 84 passing in 4.34s — that was the suite at the time of the screenshot; it has grown since.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="psr-b">
+              <div class="psr-k">What broke while building it</div>
+              <div class="psr-v">
+                <p>The hardest bug wasn't in the scraping — it was a session-timing problem in the multi-engine search tool that feeds this pipeline.</p>
+                <p>DuckDuckGo uses a POST endpoint. A cold session returns <strong>HTTP 202</strong> — not a ban, not an error, just silence. Zero results, no exception, nothing in the logs to tell you anything went wrong.</p>
+                <p>The first version warmed up every session at startup, then ran Mojeek — which takes 10–15 minutes on a large file. By the time DuckDuckGo's turn came, its session had expired. I was silently losing an entire engine's worth of leads on every run and the tool reported success.</p>
+                <p><strong>Fix: move the warmup inside the engine loop</strong>, immediately before that engine's first request. One line moved. It's in the CHANGELOG.</p>
+                <p>Second one worth naming: <code class="c">requests.get(url, timeout=10)</code> sets a socket inactivity timeout, not a wall-clock limit. A server that accepts the TCP connection then goes silent will hang the thread indefinitely. On a 1,000-site run, three or four of those stall everything. No error, no exception. The fix is running the request in a daemon thread and joining with a hard wall-clock limit.</p>
+              </div>
+            </div>
+            <div class="psr-b">
+              <div class="psr-k">Why it stays private</div>
+              <div class="psr-v">
+                <p>The six tools it orchestrates are public and MIT-licensed. The pipeline that runs them together is not.</p>
+                <p>It took weeks to get the architecture right and it's the thing that makes a delivery take 49 minutes instead of six hours. That's the product, not a portfolio piece.</p>
+                <div class="callout">
+                  <div class="lab lab-em">The lesson</div>
+                  <p>The bottleneck in most outbound operations is not sourcing. It's everything after the scrape — cleaning, merging, delivering. Build the pipeline around <em>that</em>, and sourcing becomes almost free.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section id="clients" style="background:var(--bg-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="sec-num">04 — CLIENTS</span>
+      <h2 class="disp">Six people who<br><span class="em">paid me to do this.</span></h2>
+      <p class="lede">Collected and published with permission. Most of this work came through freelance platforms, so I have the feedback but not the right to publish company names — sector and engagement are listed instead.</p>
+    </div>
+
+    <div class="tqs rv">
+      <div class="tq">
+        <span class="tq-q">&ldquo;</span>
+        <p class="tq-m">He ran the whole thing on his own — built the database of letting agents, block managers and estate agents across London, then handled the cold email, the meeting bookings, the invoicing and the sales tracking. Everything sat in sheets we could open any time, so we were never chasing him for an update. We handed him a lot and he got on with it.</p>
+        <div class="tq-w">
+          <div class="tq-n">UK property compliance company</div>
+          <div class="tq-r">Outbound &amp; CRM · 6-month engagement</div>
+        </div>
+      </div>
+
+      <div class="tq">
+        <span class="tq-q">&ldquo;</span>
+        <p class="tq-m">We needed businesses that specifically did not have a website, which is an awkward thing to search for — most lead gen people just could not do it. Afaq worked out how to find and qualify them at scale and we got a steady flow of prospects that actually fit, instead of a generic contact list.</p>
+        <div class="tq-w">
+          <div class="tq-n">SaaS company</div>
+          <div class="tq-r">Businesses without a website · Ongoing</div>
+        </div>
+      </div>
+
+      <div class="tq">
+        <span class="tq-q">&ldquo;</span>
+        <p class="tq-m">He sourced heavy truck repair shops for our export business. It is a narrow market and not an obvious one to search, but he understood the brief straight away and came back with a list we could actually work from rather than a directory dump. Would use him again.</p>
+        <div class="tq-w">
+          <div class="tq-n">Spare parts exporter</div>
+          <div class="tq-r">Heavy truck repair sector · Project</div>
+        </div>
+      </div>
+
+      <div class="tq">
+        <span class="tq-q">&ldquo;</span>
+        <p class="tq-m">I wanted to know which industries would be the best fit for my communication diagnostics course and I honestly did not know where to start. He did the research and came back with a shortlist, and more usefully, the reasoning for each one. Saved me a lot of guesswork before I had even started reaching out.</p>
+        <div class="tq-w">
+          <div class="tq-n">Corporate trainer</div>
+          <div class="tq-r">Market &amp; ICP research · Project</div>
+        </div>
+      </div>
+
+      <div class="tq">
+        <span class="tq-q">&ldquo;</span>
+        <p class="tq-m">He found Shopify and e-commerce store owners who were a genuine fit for our photo editing service — not just a list of online shops. He picked up who we were after quickly, so the leads he sent over were ones we could pitch properly. Easy to brief, and reliable.</p>
+        <div class="tq-w">
+          <div class="tq-n">Photo editing service</div>
+          <div class="tq-r">Shopify &amp; e-commerce sellers · Project</div>
+        </div>
+      </div>
+
+      <div class="tq">
+        <span class="tq-q">&ldquo;</span>
+        <p class="tq-m">We handed over a big messy list and got back something we could use. He cleaned it, stripped the duplicates and checked every contact against our ICP. It is boring work and most people cut corners on it — he did not, and it saved us weeks of working off bad data.</p>
+        <div class="tq-w">
+          <div class="tq-n">List cleaning &amp; ICP qualification</div>
+          <div class="tq-r">22,700 records → 9,567 usable</div>
+        </div>
+      </div>
+    </div>
+
+    <p class="tq-note">Published with permission · Client names withheld by agreement · References available on request</p>
+  </div>
+</section>
+
+<!-- ============ THE LOOP ============ -->
+<section id="loop">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="sec-num">05 — THE THESIS</span>
+      <h2 class="disp">Outbound doesn't fail because<br>people are bad at their jobs.<br><span class="em">It fails because the system never learns.</span></h2>
+      <p class="lede">Three teams. One-way information flow. No feedback loop. This is the structural gap I keep finding, and closing it is the actual job.</p>
+    </div>
+
+    <div class="loop rv">
+      <div class="loop-c">
+        <div class="n">01 — ICP DEFINITION</div>
+        <h4>Defines the targeting rules</h4>
+        <p>Never sees a reply rate. Defined it once, months ago, and nobody has told them anything since.</p>
+      </div>
+      <div class="loop-c">
+        <div class="n">02 — SOURCING &amp; QUALIFICATION</div>
+        <h4>Builds the list against those rules</h4>
+        <p>Has no authority to push back, even when the data suggests the ICP is wrong.</p>
+      </div>
+      <div class="loop-c">
+        <div class="n">03 — EMAIL EXECUTION</div>
+        <h4>Sends and measures replies</h4>
+        <p>Has no idea how the list was built. Knows only that the reply rate is bad — and gets blamed for it.</p>
+      </div>
+    </div>
+
+    <div class="loop-break rv">✕ &nbsp; Reply-rate data never returns to step 01</div>
+
+    <div class="rv" style="margin-top:44px;display:grid;grid-template-columns:1fr 1fr;gap:34px">
+      <div>
+        <h3 class="disp" style="margin-bottom:16px">Why this matters</h3>
+        <p style="color:var(--mid)">Nobody in that chain is doing their job badly. It isn't a skills gap — it's a structural one. Nobody owns the loop between ICP, sourcing and outcome.</p>
+        <p style="color:var(--mid);margin-top:14px">The fix isn't hiring a better SDR or rewriting the ICP once. It's closing the loop: reply data feeding back into targeting, continuously.</p>
+      </div>
+      <div>
+        <h3 class="disp" style="margin-bottom:16px">Where I sit</h3>
+        <p style="color:var(--mid)">I've sat on all three sides — defining ICPs, sourcing and qualifying against them, and sending the emails myself.</p>
+        <p style="color:var(--mid);margin-top:14px">The moments that changed outcomes were never a better subject line. They were catching that the ICP had quietly gone stale <em>before</em> another 1,000 emails went out against it.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROCESS ============ -->
+<section id="process" style="background:var(--bg-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="sec-num">06 — HOW I WORK</span>
+      <h2 class="disp">ICP to inbox,<br><span class="em">the whole run.</span></h2>
+      <p class="lede">This is the sequence I run on every engagement. The order matters more than any single tool in it.</p>
+    </div>
+
+        <div class="pflow rv" role="img" aria-label="Nine stage process: define ICP, source, enrich, verify, segment, write, send, measure, hand off">
+      <div class="pf"><div class="pf-n">01</div><div class="pf-t">Define ICP</div></div>
+      <div class="pf"><div class="pf-n">02</div><div class="pf-t">Source</div></div>
+      <div class="pf"><div class="pf-n">03</div><div class="pf-t">Enrich</div></div>
+      <div class="pf"><div class="pf-n">04</div><div class="pf-t">Verify</div></div>
+      <div class="pf"><div class="pf-n">05</div><div class="pf-t">Segment</div></div>
+      <div class="pf"><div class="pf-n">06</div><div class="pf-t">Write</div></div>
+      <div class="pf"><div class="pf-n">07</div><div class="pf-t">Send</div></div>
+      <div class="pf"><div class="pf-n">08</div><div class="pf-t">Measure</div></div>
+      <div class="pf"><div class="pf-n">09</div><div class="pf-t">Hand off</div></div>
+    </div>
+    <p class="chart-cap rv" style="margin-bottom:26px">Stage 08 loops back to stage 01 when replies go flat — that return path is the part most teams are missing. Full detail on each stage below.</p>
+
+<div class="steps rv">
+      <div class="step"><div class="step-n">01</div><div class="step-t">Define the ICP</div><div class="step-d">Four things locked before anyone touches a scraper: <b>firmographic filter</b> (sized by the right proxy — a 3-person agency can manage 400 units, so headcount tells you nothing), <b>geography</b>, <b>trigger event</b> — the thing that makes someone need this <em>now</em> — and <b>decision-maker title</b>, which is often two personas, not one. A vague brief just means re-qualifying the ICP mid-project, and nobody wants to pay for that twice.</div></div>
+
+      <div class="step"><div class="step-n">02</div><div class="step-t">Source</div><div class="step-d">Different sources do different jobs. Association and council directories via my own scrapers. Google Maps for businesses with a physical presence, cross-referenced to confirm they're still active. Sales Navigator to confirm the actual decision-maker rather than guessing. Apollo as secondary, for verified emails and firmographic gaps.<br><br><b>The decision rule:</b> if it's a structured public directory that generic databases under-index — hyperlocal or association-gated — build a scraper. If the market is broad and well-indexed, Apollo or Sales Nav alone is faster and a scraper adds nothing.</div></div>
+
+      <div class="step"><div class="step-n">03</div><div class="step-t">Enrich — in waterfall order</div><div class="step-d">Fixed order, so I'm not burning credits on data I already have:<br>1 · Source data first — whatever the pull already gave me<br>2 · Apollo / Clay — verified email, LinkedIn, title, size<br>3 · My own enricher for the gap — HTTP pass on the site, Playwright fallback for JS-rendered or Cloudflare-obfuscated pages<br>4 · SMTP-level check before anything enters a send list<br>5 · Phone normalised to E.164 so the dialer doesn't choke</div></div>
+
+      <div class="step"><div class="step-n">04</div><div class="step-t">Verify — the three-bucket system</div><div class="step-d">Every email lands in one of three buckets before it goes near a sequence. This isn't a judgement call per contact — it's a rule the pipeline applies automatically.<br><br><b class="st-ok">VERIFIED</b> — SMTP RCPT confirms the mailbox exists, MX valid, not role-based. Main sequence, full volume.<br><b class="st-warn">CATCH-ALL</b> — domain accepts everything, so the mailbox can't be confirmed. Still sent to, but lower volume, <em>separate sending domain</em>, bounce rate watched closely. First place I look if deliverability dips.<br><b class="st-bad">INVALID</b> — no MX, hard bounce, or role-based/disposable. Dropped entirely. Flagged for manual research via LinkedIn if the contact is worth chasing another way.</div></div>
+
+      <div class="step"><div class="step-n">05</div><div class="step-t">Segment — before writing a word</div><div class="step-d">Trigger present vs. not · size tier · decision-maker seniority · engagement history. Anyone who has opened or clicked before goes into warm re-engagement, not back into cold from scratch.</div></div>
+
+      <div class="step"><div class="step-n">06</div><div class="step-t">Write — three variants per segment</div><div class="step-d">Tested against each other <em>within</em> a segment, never against the whole list at once, or I can't tell whether the result was the segment or the copy.<br><br><b>A — trigger-led:</b> opens on the deadline. Strongest on high-urgency.<br><b>B — proof-led:</b> peers of similar size already doing it. Better on larger accounts.<br><b>C — short, curiosity-led:</b> three lines, one question, no pitch. Best on cold segments where a hard pitch dies.<br><br>What changes: subject, opener, length, CTA. The offer never changes — only the entry point into the reader's attention.</div></div>
+
+      <div class="step"><div class="step-n">07</div><div class="step-t">Send</div><div class="step-d">New mailboxes warm up before touching real prospects. Dedicated subdomains, <em>never</em> the client's root domain — that domain is needed for the rest of their business. Conservative volume per mailbox, several mailboxes in parallel, rather than pushing one past a safe cap. Catch-all contacts route through their own lower-volume domain so a problem there never touches the verified list.</div></div>
+
+      <div class="step"><div class="step-n">08</div><div class="step-t">Measure — and know when to kill it</div><div class="step-d">In priority order: <b>bounce rate</b> is the hard stop — a spike is a domain reputation risk, not a data quality annoyance, so it pauses everything. <b>Spam complaints</b>, near-zero tolerance. <b>Open rate</b>, tracked but not trusted (Apple MPP inflates it). <b>Reply rate</b>, the real quality signal. <b>Meetings booked</b>, the only one the client actually cares about.<br><br><b>What sends me back to stage 01 instead of stage 06:</b> volume healthy, bounce fine, opens fine, but replies flat <em>and</em> the few that come are "wrong contact." That's not a copy problem. That's an ICP problem.</div></div>
+
+      <div class="step"><div class="step-n">09</div><div class="step-t">Hand off</div><div class="step-d">One row per contact — not per email. The sales team needs a single source of truth per prospect, not a log of every touch.<br><br>Company · Contact · Title · Verified Email · <b>Verification Bucket</b> · Phone (E.164) · LinkedIn · Source · Segment/Tier · Sequence + Variant · Reply Status · Meeting Booked · Owner · <b>Trigger Event</b> · First Contacted · Last Touch.<br><br>Into HubSpot or Zoho the same schema maps cleanly — bucket and tier as custom properties on the Company, sequence and reply status on the Contact, trigger event in a custom field so a rep opening the record immediately knows <em>why</em> this person was contacted. The shape doesn't change when the CRM does. Only where it gets pushed.</div></div>
+    </div>
+
+    <div class="rv" style="margin-top:34px;padding:24px 28px;border:1px dashed var(--line-hi);border-radius:var(--r-card);background:var(--bg)">
+      <div class="lab lab-em" style="margin-bottom:10px">A note on tooling</div>
+      <p style="color:var(--mid);font-size:16px">That engagement ran on structured, audit-tracked Excel, because that's what the client had — no licensed CRM. The pipeline logic above doesn't depend on the tool. The repeatable parts of it — sourcing, qualification, storage, dispatch — are what I later built into an n8n workflow so the same sequence runs without me pushing each stage forward by hand.</p>
+    </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROOF ============ -->
+<section id="proof">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="sec-num">07 — PROOF OF WORK</span>
+      <h2 class="disp">Real runs.<br><span class="em">Real output.</span></h2>
+      <p class="lede">Screenshots from actual jobs. Client-identifying data is withheld; run metrics are not.</p>
+    </div>
+
+    <p class="lab rv" style="margin-bottom:20px">Click any image to view it full size</p>
+
+    <div class="shots rv">
+      <button class="shot" data-full="assets/img/proof-tests.png">
+        <img src="assets/img/proof-tests.png" alt="pytest run collecting 84 items across test_api, test_delivery, test_html_spider, test_json_spider, test_normaliser, test_runner and test_store — 84 passed in 4.34 seconds" loading="lazy">
+        <div class="shot-cap"><b>The private pipeline's test suite</b><span>84 passed in 4.34s at time of capture · suite now 100+</span></div>
+      </button>
+      <button class="shot" data-full="assets/img/proof-batch-done.png">
+        <img src="assets/img/proof-batch-done.png" alt="Batch complete summary: google_maps 118 records, trustpilot 458 records, total 576, deduplicated and delivered to a Google Sheets tab" loading="lazy">
+        <div class="shot-cap"><b>576 rows, deduplicated, delivered</b><span>118 Maps + 458 Trustpilot → 576 → Google Sheets</span></div>
+      </button>
+      <button class="shot" data-full="assets/img/proof-batch-run.png">
+        <img src="assets/img/proof-batch-run.png" alt="Live Google Maps scraper stage: 119 places visited, 118 new leads, 78 with email (66%), 106 with phone (89%), 35 minutes 52 seconds" loading="lazy">
+        <div class="shot-cap"><b>Live run — Google Maps stage</b><span>119 visited · 78 email (66%) · 106 phone (89%) · 35m52s</span></div>
+      </button>
+      <button class="shot" data-full="assets/img/proof-harvester.png">
+        <img src="assets/img/proof-harvester.png" alt="Directory harvester output: a cleaned, deduplicated export of UK letting and estate agency records with name, phone, website, postcode, category and source columns" loading="lazy">
+        <div class="shot-cap"><b>What a cleaned export looks like</b><span>Deduplicated · geo-filtered · source-tagged per row</span></div>
+      </button>
+      <button class="shot" data-full="assets/img/proof-maps-csv.png">
+        <img src="assets/img/proof-maps-csv.png" alt="Spreadsheet of scraped Manchester IT recruitment agencies with company name, phone, website, email, postcode, rating, address and per-row email and phone verification status" loading="lazy">
+        <div class="shot-cap"><b>What lands in the client's hands</b><span>Named columns · email &amp; phone status flagged per row</span></div>
+      </button>
+      <button class="shot" data-full="assets/img/proof-leadhunter.png">
+        <img src="assets/img/proof-leadhunter.png" alt="LeadHunter Pro phase 2 contact enrichment: pass 1 concurrent HTTP across 149 sites finding 106 contacts, pass 2 Playwright headless browser on the remaining 43" loading="lazy">
+        <div class="shot-cap"><b>Two-pass enrichment</b><span>149 sites · HTTP pass → 106 found · Playwright pass on the rest</span></div>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TOOLS ============ -->
+<section id="tools" style="background:var(--bg-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="sec-num">08 — WHAT I BUILT</span>
+      <h2 class="disp">Six public tools.<br><span class="em">One private pipeline.</span></h2>
+      <p class="lede">Built because I was the one doing the job by hand first. 565 automated tests across the public repositories, CI running on Linux, Windows and macOS.</p>
+    </div>
+
+    <div class="tools rv">
+      <div class="tool">
+        <div class="tool-h"><div class="tool-n">Google Maps Business Scraper</div><div class="tool-t">122 tests</div></div>
+        <p class="tool-d">Resumable scraper pulling business contact data from Maps for any query and location. Clean styled XLSX or CSV out. Survives interruption and picks up where it stopped.</p>
+        <div class="tool-f"><span class="chip">Python</span><span class="chip">Selenium</span><span class="chip">Resumable</span></div>
+        <a class="tool-link" href="https://github.com/FAAQJAVED/Google-Maps-Business-Scraper" target="_blank" rel="noopener">View repository →</a>
+      </div>
+
+      <div class="tool">
+        <div class="tool-h"><div class="tool-n">Email &amp; Phone Enricher</div><div class="tool-t">78 tests</div></div>
+        <p class="tool-d">Two-pass contact extraction from any list of company websites. Fast HTTP pass first, headless browser for the rest. Decodes Cloudflare-obfuscated addresses. ~90% hit rate; 1,000 sites in under 45 minutes.</p>
+        <div class="tool-f"><span class="chip">Playwright</span><span class="chip">Cloudflare decode</span><span class="chip">Auto-save</span></div>
+        <a class="tool-link" href="https://github.com/FAAQJAVED/Email-Phone-Number-Enrichment-Tool" target="_blank" rel="noopener">View repository →</a>
+      </div>
+
+      <div class="tool">
+        <div class="tool-h"><div class="tool-n">Trustpilot Business Scraper</div><div class="tool-t">72 tests</div></div>
+        <p class="tool-d">Extracts contact data and reputation signals from any Trustpilot search. Parallel profile fetching, checkpoint and resume, config-driven. 458 records in under 11 minutes on a live run.</p>
+        <div class="tool-f"><span class="chip">Parallel</span><span class="chip">Checkpoint</span><span class="chip">Trust signals</span></div>
+        <a class="tool-link" href="https://github.com/FAAQJAVED/Trustpilot-Business-Scraper" target="_blank" rel="noopener">View repository →</a>
+      </div>
+
+      <div class="tool">
+        <div class="tool-h"><div class="tool-n">LeadHunter Pro</div><div class="tool-t">121 tests</div></div>
+        <p class="tool-d">Four search engines at once — Mojeek, DuckDuckGo, Yahoo, Bing. Each lies differently, so no single one sees the whole market. Enriches and tiers every result HOT / WARM / COLD / NOISE before it reaches the file.</p>
+        <div class="tool-f"><span class="chip">4 engines</span><span class="chip">Lead scoring</span><span class="chip">Abstract base class</span></div>
+        <a class="tool-link" href="https://github.com/FAAQJAVED/Leadhunter_Pro" target="_blank" rel="noopener">View repository →</a>
+      </div>
+
+      <div class="tool">
+        <div class="tool-h"><div class="tool-n">JSON Directory Harvester</div><div class="tool-t">79 tests</div></div>
+        <p class="tool-d">Targets directory JSON APIs directly instead of scraping their front ends. Geo-filtering and deduplication built in — it processes tens of thousands of records in seconds.</p>
+        <div class="tool-f"><span class="chip">JSON API</span><span class="chip">Geo filter</span><span class="chip">Dedup</span></div>
+        <a class="tool-link" href="https://github.com/FAAQJAVED/json-directory-harvester" target="_blank" rel="noopener">View repository →</a>
+      </div>
+
+      <div class="tool">
+        <div class="tool-h"><div class="tool-n">HTML Directory Scrapers</div><div class="tool-t">93 tests</div></div>
+        <p class="tool-d">Dual-engine directory extraction — Playwright for rendered pages, direct WordPress AJAX where the endpoint is exposed. Config-driven, so a new directory is a YAML file rather than a new script.</p>
+        <div class="tool-f"><span class="chip">Playwright</span><span class="chip">WP AJAX</span><span class="chip">YAML config</span></div>
+        <a class="tool-link" href="https://github.com/FAAQJAVED/html-directory-scrapers" target="_blank" rel="noopener">View repository →</a>
+      </div>
+
+      <div class="tool" style="border-style:dashed">
+        <div class="tool-h"><div class="tool-n">FreshPipe — n8n workflow</div><div class="tool-t">BUILDING</div></div>
+        <p class="tool-d">The repeatable parts of the manual pipeline, running without me: lead sourcing → AI qualification → CRM storage → email dispatch, end to end. Same logic as the nine stages above, just automated. In progress, not oversold.</p>
+        <div class="tool-f"><span class="chip">n8n</span><span class="chip">AI qualification</span><span class="chip">CRM sync</span></div>
+        <a class="tool-link" href="https://github.com/FAAQJAVED" target="_blank" rel="noopener">Follow on GitHub →</a>
+      </div>
+
+      <div class="tool private" style="grid-column:1/-1">
+        <div class="tool-h"><div class="tool-n">lead-pipeline — the orchestration layer</div><div class="tool-t">PRIVATE · 100+ tests</div></div>
+        <p class="tool-d">
+          The system that runs the others together. Plugin architecture — any scraper returning a list of records plugs in without downstream changes. SQLite for permanent run history, FastAPI for triggering and delivery, automatic normalisation, deduplication and Google Sheets push. One command, 576 verified leads, 49 minutes, unattended.
+          <br><br>
+          <strong style="color:var(--mid)">Not open source, deliberately.</strong> The six tools above are public and MIT-licensed. The architecture that makes them a pipeline instead of six scripts is the part that took weeks to get right — that's the product. Happy to walk through the design in a call.
+        </p>
+        <div class="tool-f"><span class="chip">FastAPI</span><span class="chip">SQLite</span><span class="chip">Plugin system</span><span class="chip">Google Sheets API</span><span class="chip">pytest</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STACK ============ -->
+<section id="stack">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="sec-num">09 — STACK</span>
+      <h2 class="disp">What I run,<br><span class="em">and what I'm learning.</span></h2>
+    </div>
+
+    <div class="stack rv">
+      <div class="stack-g">
+        <h4>Sourcing &amp; data</h4>
+        <ul>
+          <li>Apollo</li><li>LinkedIn Sales Navigator</li><li>Clay</li>
+          <li>Google Maps</li><li>Trustpilot</li><li>Business directories &amp; JSON APIs</li>
+        </ul>
+      </div>
+      <div class="stack-g">
+        <h4>CRM &amp; ops</h4>
+        <ul>
+          <li>HubSpot</li><li>Zoho CRM</li><li>Airtable</li>
+          <li>Google Sheets</li><li>Excel — audit trails, invoice logs</li>
+        </ul>
+      </div>
+      <div class="stack-g">
+        <h4>Build</h4>
+        <ul>
+          <li>Python</li><li>SQL</li><li>FastAPI</li><li>SQLite</li>
+          <li>Playwright · Selenium</li><li>pytest · GitHub Actions</li>
+        </ul>
+      </div>
+      <div class="stack-g">
+        <h4>Learning now</h4>
+        <ul>
+          <li class="learn">Clay — depth, not surface</li>
+          <li class="learn">n8n</li>
+          <li class="learn">AI-assisted GTM workflows</li>
+          <li class="learn">Salesforce — the honest gap</li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="rv" style="margin-top:34px;color:var(--muted);font-size:15px;max-width:70ch">
+      Salesforce appears in roughly 45% of GTM engineering postings and I haven't worked in it. Listing it as a skill would be a lie you'd find out about in week one, so it's listed here instead.
+    </p>
+  </div>
+</section>
+
+<!-- ============ TRAJECTORY ============ -->
+<section id="trajectory" style="background:var(--bg-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="sec-num">10 — WHAT I OWN</span>
+      <h2 class="disp">What I own today,<br><span class="em">and what I'm adding.</span></h2>
+      <p class="lede">No roadmap to competence. This is the work I take responsibility for right now, and the tools I am deliberately going deeper on.</p>
+    </div>
+
+    <div class="own rv">
+      <div class="own-c">
+        <div class="own-h">Owned today · end to end</div>
+        <ul class="own-l">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span><strong>ICP definition</strong> — firmographic rules, trigger events, and the discipline to revisit them when replies go flat</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span><strong>Sourcing &amp; qualification</strong> — directories, Maps, Sales Navigator, Apollo, plus my own tooling where those stop</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span><strong>Enrichment &amp; verification</strong> — waterfall enrichment, three-bucket verification, per-row status flags</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span><strong>Cold email infrastructure</strong> — dedicated domains, SPF/DKIM/DMARC, warmup, segmented sequences</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span><strong>CRM handoff</strong> — one row per contact, 16-field schema, mapped into HubSpot or Zoho so sales can work it</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span><strong>The automation underneath</strong> — Python tooling when the off-the-shelf stack runs out</span></li>
+        </ul>
+      </div>
+
+      <div class="own-c next">
+        <div class="own-h">Going deeper on</div>
+        <ul class="own-l">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg><span><strong>Clay</strong> — to certification, with the enrichment waterfalls documented</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg><span><strong>n8n</strong> — moving my own pipelines onto it so a client team can maintain them without me</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg><span><strong>Signal-based targeting</strong> — hiring, funding and tech-change triggers instead of static lists</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg><span><strong>Salesforce</strong> — the honest gap, named again below rather than quietly padded into the stack</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WRITING ============ -->
+<section id="writing">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="sec-num">11 — WRITING</span>
+      <h2 class="disp">I publish the<br><span class="em">teardowns too.</span></h2>
+      <p class="lede">Breakdowns of what broke and how it got fixed. If you want to see how I think before you talk to me, start here.</p>
+    </div>
+
+    <div class="posts rv">
+      <a class="post" href="https://www.linkedin.com/feed/update/urn:li:activity:7491075848968663040/" target="_blank" rel="noopener">
+        <div><div class="post-t">Nobody blames the SDR. Nobody blames the CEO. The problem is the silence between three people who never talk to each other.</div>
+        <div class="post-m">The broken outbound loop · Aug 2026</div></div>
+      </a>
+      <a class="post" href="https://www.linkedin.com/feed/update/urn:li:activity:7487799893949054977/" target="_blank" rel="noopener">
+        <div><div class="post-t">My manager refused to let me automate my job. That decision built the next two years of my career.</div>
+        <div class="post-m">Origin story · Jul 2026</div></div>
+      </a>
+      <a class="post" href="https://www.linkedin.com/feed/update/urn:li:activity:7487080260522463232/" target="_blank" rel="noopener">
+        <div><div class="post-t">576 verified leads. One search. Two sources. One command. The full architecture breakdown.</div>
+        <div class="post-m">Pipeline teardown · Jul 2026</div></div>
+      </a>
+      <a class="post" href="https://www.linkedin.com/feed/update/urn:li:activity:7486000779946823680/" target="_blank" rel="noopener">
+        <div><div class="post-t">I sourced 1,000 leads for a US client. Only 70 made the final list. Those 70 had a 70% reply rate.</div>
+        <div class="post-m">Qualification workflow · Jul 2026</div></div>
+      </a>
+      <a class="post" href="https://www.linkedin.com/feed/update/urn:li:activity:7484910116220350464/" target="_blank" rel="noopener">
+        <div><div class="post-t">863 leads. Then 12,182 leads. Still couldn't email a single person for free.</div>
+        <div class="post-m">Sales Navigator vs Apollo · Jul 2026</div></div>
+      </a>
+      <a class="post" href="https://www.linkedin.com/feed/update/urn:li:activity:7485589599365484545/" target="_blank" rel="noopener">
+        <div><div class="post-t">15,000 cold emails over 5 months, under 1% replies. The issue became clear at email number 1,000.</div>
+        <div class="post-m">Cold email teardown · Jul 2026</div></div>
+      </a>
+    </div>
+
+    <p class="rv" style="margin-top:26px">
+      <a href="https://www.linkedin.com/in/faaqjaved/recent-activity/all/" target="_blank" rel="noopener"
+         style="font-family:var(--mono);font-size:12px;text-transform:uppercase;letter-spacing:.13em;color:var(--ember-text)">
+        All posts on LinkedIn →</a>
+    </p>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact" style="background:var(--bg-2);border-top:1px solid var(--line)">
+  <div class="wrap">
+    <div class="contact rv">
+      <div class="c-left">
+        <h3 class="disp">Tell me what's<br><span class="em">broken.</span></h3>
+        <p>Whether it's a list that bounces, an ICP nobody has revisited in six months, or a delivery process eating half a day per client — describe it and I'll tell you straight whether I can help.</p>
+
+        <div class="c-links">
+          <a class="c-link" href="mailto:faaqjaved@gmail.com">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+            faaqjaved@gmail.com
+          </a>
+          <a class="c-link" href="https://wa.me/923120783268" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.39-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.06 2.88 1.21 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.62.71.23 1.36.19 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.42-.07-.13-.27-.2-.57-.35M12 2a10 10 0 0 0-8.6 15.1L2 22l5.05-1.32A10 10 0 1 0 12 2m0 1.67a8.3 8.3 0 0 1 6.9 12.94l-.2.32.86 3.14-3.23-.85-.31.18A8.33 8.33 0 1 1 12 3.67"/></svg>
+            +92 312 078 3268 · WhatsApp
+          </a>
+          <a class="c-link" href="https://www.linkedin.com/in/faaqjaved/" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.72v20.55C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.72C24 .77 23.2 0 22.22 0Z"/></svg>
+            linkedin.com/in/faaqjaved
+          </a>
+          <a class="c-link" href="https://github.com/FAAQJAVED" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3"/></svg>
+            github.com/FAAQJAVED
+          </a>
+        </div>
+      </div>
+
+      <form id="form" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="58a3d58d-a702-419d-948e-cc8d6ce5fe0a">
+        <input type="hidden" name="subject" value="New enquiry from afaqjaved portfolio">
+        <input type="hidden" name="from_name" value="Portfolio contact form">
+        <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
+
+        <div class="f-row">
+          <div><label for="n">Your name</label><input type="text" id="n" name="name" required></div>
+          <div><label for="e">Email</label><input type="email" id="e" name="email" required></div>
+        </div>
+        <div><label for="c">Company <span style="text-transform:none;letter-spacing:0">(optional)</span></label><input type="text" id="c" name="company"></div>
+
+        <div>
+          <label>What is this about?</label>
+          <div class="needs">
+            <label class="need"><input type="checkbox" name="needs[]" value="HIRING — full-time / contract role"><span>Hiring for a role</span></label>
+            <label class="need"><input type="checkbox" name="needs[]" value="Lead sourcing"><span>Lead sourcing</span></label>
+            <label class="need"><input type="checkbox" name="needs[]" value="ICP definition &amp; research"><span>ICP definition</span></label>
+            <label class="need"><input type="checkbox" name="needs[]" value="List cleaning &amp; verification"><span>List cleaning</span></label>
+            <label class="need"><input type="checkbox" name="needs[]" value="Enrichment"><span>Enrichment</span></label>
+            <label class="need"><input type="checkbox" name="needs[]" value="Cold email campaign setup"><span>Cold email setup</span></label>
+            <label class="need"><input type="checkbox" name="needs[]" value="Custom scraper / automation"><span>Custom automation</span></label>
+            <label class="need"><input type="checkbox" name="needs[]" value="CRM setup &amp; migration"><span>CRM setup</span></label>
+            <label class="need"><input type="checkbox" name="needs[]" value="Something else"><span>Something else</span></label>
+          </div>
+        </div>
+
+        <div><label for="m">Tell me about it</label><textarea id="m" name="message" placeholder="What are you trying to reach, and what's getting in the way?" required></textarea></div>
+
+        <button type="submit" class="submit" id="sub">Send message</button>
+        <div class="f-msg" id="fmsg" role="status"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot">
+    <p>© 2026 Afaq Javed · Gujrat, Pakistan · Remote, UK &amp; US hours</p>
+    <div class="foot-l">
+      <a href="https://www.linkedin.com/in/faaqjaved/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/FAAQJAVED" target="_blank" rel="noopener">GitHub</a>
+      <a href="mailto:faaqjaved@gmail.com">Email</a>
+      <a href="https://wa.me/923120783268" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+/* ============================================================
+   EMBER — brand tokens. Single source of truth.
+   Used by: the portfolio, the LinkedIn carousel kit, the banner.
+   Change a value here and every surface follows.
+
+   TWO THEMES. Light is the default (better in-feed, better on
+   projectors, better for long reading). Dark is opt-in and is
+   what the LinkedIn image assets are exported in.
+
+   Theme is set by [data-theme] on <html>. No-JS falls back to light.
+   ============================================================ */
+
+:root{
+  /* ---------- LIGHT (default) ---------- */
+  --bg:      #FBF8F3;   /* warm cream, not clinical white */
+  --bg-2:    #F4EFE7;
+  --bg-3:    #EDE6DB;
+  --card:    #FFFFFF;
+  --deep:    #2A2520;   /* code blocks only — stays dark in both themes */
+  --surface-code: #FFFFFF;  /* run card & screenshot frames: light in light mode */
+  --code:        #1F5F6E;   /* inline code text — 7.0:1 on cream */
+  --code-bg:     #EDE6DB;
+  --code-on-dark:#8FD4E8;   /* inside the always-dark pre block */
+
+  --line:    #E4DBCD;
+  --line-hi: #D2C5B2;
+
+  --text:    #211D19;   /* 15.80:1 on --bg */
+  --mid:     #4A4038;   /*  9.52:1 */
+  --muted:   #6B5E52;   /*  5.92:1 */
+
+  /* Ember splits in two.
+     --ember      = fills, rules, dots, big display numbers (non-text-critical)
+     --ember-text = anything small the eye must READ. #FF7A3D is 2.45:1 on
+                    cream and fails outright, so body-scale ember must darken. */
+  --ember:      #E8682A;
+  --ember-text: #B8420A;   /* 5.19:1 on --bg */
+  --ember-2:    #FF7A3D;
+  --ember-deep: #9A3609;
+  --ink:        #17110C;   /* on --ember fills */
+  --on-ember:   #FFFFFF;   /* white on the darker fill used for buttons */
+  --ember-fill: #B8420A;   /* button bg — white on this is 5.49:1 */
+  --ember-wash: rgba(184,66,10,.08);
+  --ember-glow: rgba(232,104,42,.13);
+
+  --teal:      #2E6675;   /* 6.06:1 */
+  --teal-deep: #265866;
+  --green:     #18703A;   /* 5.80:1 */
+  --red:       #B82C26;   /* 5.79:1 */
+  --green-wash: rgba(24,112,58,.10);
+  --green-line: rgba(24,112,58,.30);
+  --red-wash:   rgba(184,44,38,.10);
+  --red-line:   rgba(184,44,38,.30);
+
+  --nav-bg:  rgba(251,248,243,.88);
+  --lb-bg:   rgba(38,33,28,.95);
+  --shadow:  0 30px 90px rgba(63,50,38,.22);
+  --card-shadow: 0 1px 2px rgba(63,50,38,.05), 0 6px 20px rgba(63,50,38,.05);
+
+  /* ---------- shared ---------- */
+  --disp: 'Anton', 'Arial Narrow', sans-serif;
+  --sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --mono: 'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+
+  --ease:  cubic-bezier(.22,1,.36,1);
+  --ease2: cubic-bezier(.65,0,.35,1);
+
+  --r-card: 16px;
+  --r-chip: 7px;
+  --r-pill: 100px;
+  --maxw: 1180px;
+  --gut: 28px;
+}
+
+/* ---------- DARK ---------- */
+[data-theme="dark"]{
+  --bg:      #16181E;
+  --bg-2:    #1C1F26;
+  --bg-3:    #22262F;
+  --card:    #272B35;
+  --deep:    #101218;
+  --surface-code: #101218;
+  --code:        #6FB3C4;
+  --code-bg:     #101218;
+  --code-on-dark:#6FB3C4;
+
+  --line:    #31353F;
+  --line-hi: #434857;
+
+  --text:    #F5F0E8;   /* 15.64:1 */
+  --mid:     #CFC7BB;   /* 10.60:1 */
+  --muted:   #9A9187;   /*  5.72:1 */
+
+  --ember:      #FF7A3D;   /* 6.85:1 — readable as text on dark */
+  --ember-text: #FF7A3D;
+  --ember-2:    #FF9E5C;
+  --ember-deep: #E8682A;
+  --ink:        #17110C;   /* 7.22:1 on ember. White on ember = 2.59 FAIL. */
+  --on-ember:   #17110C;
+  --ember-fill: #FF7A3D;
+  --ember-wash: rgba(255,122,61,.10);
+  --ember-glow: rgba(255,122,61,.10);
+
+  --teal:      #6FB3C4;   /* 7.54:1 */
+  --teal-deep: #3D7A8A;
+  --green:     #5DDE82;
+  --red:       #FF6B6B;
+  --green-wash: rgba(93,222,130,.10);
+  --green-line: rgba(93,222,130,.30);
+  --red-wash:   rgba(255,107,107,.10);
+  --red-line:   rgba(255,107,107,.30);
+
+  --nav-bg:  rgba(22,24,30,.88);
+  --lb-bg:   rgba(8,9,12,.94);
+  --shadow:  0 30px 90px rgba(0,0,0,.6);
+  --card-shadow: none;
+}
+
+/* ============================================================
+   THE RULES — these are not suggestions
+   ------------------------------------------------------------
+   1. Anton is UPPERCASE DISPLAY ONLY. Min 20px. Never body copy.
+   2. Every number is JetBrains Mono 700, tabular-nums,
+      letter-spacing -.05em.
+   3. Labels are uppercase mono, tracking .1em - .19em.
+   4. 60 / 30 / 10 — bg / text / ember.
+      ONE ember focal point per screen. Not two.
+   5. Never cross ember and teal in the same run of text.
+   6. Headlines are two lines. The second line carries the turn,
+      and the turn is the only thing in ember.
+   7. No fourth colour. Ever.
+
+   LIGHT-MODE LAW:
+   8. Small ember text uses --ember-text, never --ember.
+      #FF7A3D on cream is 2.45:1 and is unreadable.
+   9. Ember-filled buttons use --ember-fill with --on-ember.
+      In light that is white on #B8420A (5.49:1).
+      In dark that is #17110C on #FF7A3D (7.22:1).
+   ============================================================ */
